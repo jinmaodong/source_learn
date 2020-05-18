@@ -1,3 +1,4 @@
+//: part2/test/Demo1.java
 package com.mdjin.part2.test;
 
 /**
@@ -61,14 +62,14 @@ public class Demo1 {
     }
 
 }
-/**
- * Output:
- * java 对 int 类型得默认初始化数据：0
- * java 对 char 类型得默认初始化数据：
- * java 对 byte 类型得默认初始化数据：0
- * java 对 short 类型得默认初始化数据：0
- * java 对 long 类型得默认初始化数据：0
- * java 对 boolean 类型得默认初始化数据：false
- * java 对 float 类型得默认初始化数据：0.0
- * java 对 double 类型得默认初始化数据：0.0
+/*
+  Output:
+  java 对 int 类型得默认初始化数据：0
+  java 对 char 类型得默认初始化数据：
+  java 对 byte 类型得默认初始化数据：0
+  java 对 short 类型得默认初始化数据：0
+  java 对 long 类型得默认初始化数据：0
+  java 对 boolean 类型得默认初始化数据：false
+  java 对 float 类型得默认初始化数据：0.0
+  java 对 double 类型得默认初始化数据：0.0
  *///:~

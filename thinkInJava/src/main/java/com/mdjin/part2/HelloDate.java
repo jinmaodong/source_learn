@@ -23,7 +23,8 @@ public class HelloDate {
     }
 
 }
-/**Output:(55% match)
+/*
+ Output:(55% match)
  Hello,it's:
  Tue May 19 00:16:18 CST 2020
  *///:~

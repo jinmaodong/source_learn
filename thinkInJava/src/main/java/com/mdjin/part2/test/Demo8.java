@@ -1,3 +1,4 @@
+//: part2/test/Demo8.java
 package com.mdjin.part2.test;
 
 /**
@@ -8,4 +9,18 @@ package com.mdjin.part2.test;
  * @since 1.0.0
  **/
 public class Demo8 {
+
+    static int integer = 1000;
+
+    public static void main(String[] args){
+        Demo8 d1 = new Demo8();
+        Demo8 d2 = new Demo8();
+        //不建议使用实例访问类变量
+        System.out.println(d1.integer == d2.integer) ;
+    }
+
 }
+/*
+ Output:
+ true
+ *///:~
