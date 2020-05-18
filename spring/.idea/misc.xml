@@ -7,10 +7,6 @@
     <option name="priority" value="Medium" />
     <option name="excludeFilter" value="" />
   </component>
-  <component name="JavadocGenerationManager">
-    <option name="OUTPUT_DIRECTORY" value="$USER_HOME$/Desktop" />
-    <option name="OTHER_OPTIONS" value="-encoding utf-8 -charset utf-8" />
-  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
