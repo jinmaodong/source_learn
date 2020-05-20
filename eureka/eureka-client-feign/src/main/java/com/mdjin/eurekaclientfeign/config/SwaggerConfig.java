@@ -1,4 +1,4 @@
-package com.mdjin.eurekaclientprovider.config;
+package com.mdjin.eurekaclientfeign.config;
 
 import com.google.common.base.Predicates;
 import org.springframework.context.annotation.Bean;
@@ -45,24 +45,6 @@ public class SwaggerConfig {
         }
     }
 
-
-//    @Bean
-//    public Docket api() {
-//        return new Docket(DocumentationType.SWAGGER_2)
-//                .apiInfo(apiInfo())
-//                .pathMapping("/")
-//                // 选择那些路径和api会生成document
-//                .select()
-//                // 对所有api进行监控
-//                .apis(RequestHandlerSelectors.any())
-//                //不显示错误的接口地址
-//                //错误路径不监控
-//                .paths(Predicates.not(PathSelectors.regex("/error.*")))
-//                // 对根下所有路径进行监控
-//                .paths(PathSelectors.regex("/.*"))
-//                .build();
-//    }
-
     @Bean
     public Docket TestApi1() {
         return new Docket(DocumentationType.SWAGGER_2)
@@ -98,7 +80,6 @@ public class SwaggerConfig {
                 .paths(PathSelectors.regex("/.*"))
                 .build();
     }
-
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder().title("一体化平台接口服务")

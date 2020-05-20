@@ -1,7 +1,10 @@
 package com.mdjin.eurekaclientfeign.feign;
 
+import com.mdjin.eurekaclientfeign.dto.TsUser;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
@@ -14,10 +17,10 @@ public interface ClassesFeign {
 
     /**
      * 调用远端方法
-     * @param name
-     *  参数-名称
+     * @param user
+     *  参数-用户
      * @return
      */
-    @RequestMapping("/hello")
-    public String sayHello(@RequestParam("name")String name);
+    @RequestMapping(value = "/hello",method = RequestMethod.POST)
+    public String sayHello(@RequestBody TsUser user);
 }

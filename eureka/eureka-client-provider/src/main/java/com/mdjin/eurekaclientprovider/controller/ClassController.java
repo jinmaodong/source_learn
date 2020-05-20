@@ -1,10 +1,9 @@
 package com.mdjin.eurekaclientprovider.controller;
 
+import com.mdjin.eurekaclientprovider.dto.User;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author jinmaodong
@@ -15,10 +14,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ClassController {
 
-    @ApiOperation("对用户说你好!")
-    @RequestMapping("/hello")
-    public String hello(@RequestParam("name")String name){
-        return "Hello,"+name;
+    @ApiOperation(value = "对用户说你好!",notes = "接收外部调用，显示用户信息.")
+    @RequestMapping(value = "/hello",method = RequestMethod.POST)
+    public String hello(@RequestBody User user) {
+//        return "Hello," + name;
+        return "Hello,"+user.getName()+",your id is: "+user.getId()+" ,your age is: "+user.getAge();
     }
 
 }
