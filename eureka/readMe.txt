@@ -1,0 +1,10 @@
+#eureka
+主要包含对以下内容的学习
+1.springboot
+2.springmvc
+3.swagger
+	注意使用的是实现config类的方式实现的
+4.feign
+	注意参数传递的时候，对象类使用RequestBody
+5.eureka
+	碰到yml文件格式不正确的时候，server启动报错；（因为注册了自己）
