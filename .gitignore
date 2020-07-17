@@ -38,3 +38,4 @@ logs/
 
 ### VS CODE ###
 .vscode/
+/.metadata/
