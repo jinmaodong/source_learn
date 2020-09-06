@@ -1,0 +1,36 @@
+/**  
+* <p>Title: WaveForm.java</p>  
+* <p>Description: </p>  
+* <p>Copyright: Copyright (c) 2017</p>  
+* <p>Company: www.joyintech.com</p>  
+* @author jinmaodong  
+* @date 2020-7-26  
+* @version 1.0  
+*/  
+package com.mdjin.part9.filter;
+
+/**  
+* <p>Title: WaveForm</p>  
+* <p>Description: </p>  
+* @author JinMaoDong
+* @date 2020-7-26  
+*/
+public class WaveForm {
+	
+	/** counter*/  
+	private static long counter;
+	
+	/** id*/  
+	private final long id = counter++;
+	
+	/* (non-Javadoc)  
+	 * <p>Title: toString</p>  
+	 * <p>Description: </p>  
+	 * @return  
+	 * @see java.lang.Object#toString()  
+	 */
+	public String toString() {
+		return "WaveForm "+id;
+	}
+}
+
