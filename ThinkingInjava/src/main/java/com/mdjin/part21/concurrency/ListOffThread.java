@@ -1,21 +1,22 @@
 /**  
-* <p>Title: ListOff.java</p>  
+* <p>Title: ListOffThread.java</p>  
 * <p>Description: </p>  
 * <p>Copyright: Copyright (c) 2017</p>  
 * <p>Company: www.joyintech.com</p>  
 * @author jinmaodong  
-* @date 2020-9-19  
+* @date 2020-9-21  
 * @version 1.0  
 */  
 package com.mdjin.part21.concurrency;
 
 /**  
-* <p>Title: ListOff</p>  
+* <p>Title: ListOffThread</p>  
 * <p>Description: </p>  
 * @author JinMaoDong
-* @date 2020-9-19  
+* @date 2020-9-21  
 */
-public class ListOff implements Runnable{
+public class ListOffThread extends Thread{
+
 
 	/** countDown*/  
 	protected int countDown = 10;
@@ -30,14 +31,14 @@ public class ListOff implements Runnable{
 	* <p>Title: </p>  
 	* <p>Description: </p>    
 	*/  
-	public ListOff() {};
+	public ListOffThread() {};
 	
 	/**  
 	* <p>Title: </p>  
 	* <p>Description: </p>  
 	* @param _countDown  
 	*/  
-	public ListOff(int _countDown){
+	public ListOffThread(int _countDown){
 		this.countDown = _countDown;
 	}
 	
@@ -64,5 +65,7 @@ public class ListOff implements Runnable{
 //		System.out.println();
 	}
 
-}
 
+
+
+}
